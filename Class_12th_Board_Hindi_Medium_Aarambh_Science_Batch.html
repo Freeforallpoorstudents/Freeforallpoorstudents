@@ -1,0 +1,527 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Created By Robin Hood</title>
+        <style>
+            body {
+                font-family: Cambria, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            body.dark {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+            body.skyblue {
+                background-color: #e0f7fa;
+                color: #00796b;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .header {
+                text-align: center;
+                padding: 20px 0;
+            }
+            .content {
+                margin-top: 20px;
+            }
+            .item {
+                margin-bottom: 10px;
+                cursor: pointer;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #fff;
+                transition: background-color 0.3s;
+            }
+            .item:hover {
+                background-color: #f0f0f0;
+            }
+            .video-container {
+                display: none;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .video-container video {
+                width: 100%;
+                max-width: 800px;
+                height: auto;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                background: #000;
+            }
+            .video-container iframe {
+                width: 100%;
+                max-width: 800px;
+                height: 450px;
+                border: none;
+                border-radius: 10px;
+            }
+            .pdf-viewer {
+                display: none;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pdf-viewer embed {
+                width: 80%;
+                height: 800px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .pdf-viewer.fullscreen embed {
+                width: 100%;
+                height: 100vh;
+            }
+            .controls {
+                margin-top: 10px;
+                text-align: center;
+            }
+            .control-button {
+                padding: 5px 10px;
+                margin: 0 5px;
+                cursor: pointer;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                transition: transform 0.2s;
+            }
+            .control-button:hover {
+                transform: translateY(-2px);
+                background-color: #ddd;
+            }
+            .watermark {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                color: white;
+                font-size: 20px;
+                font-family: Cambria, sans-serif;
+                opacity: 0.7;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>This Batch Downloaded By  »  ┈━═.•°℞𝑜多їη 𝙷𝑜๏𝒹°•.═━┈ </h1>
+                <h2>अब ज्यादा Search मत करो चुपचाप से पढाई करो | और हा पहले videos होंगी उसके बाद PDFs हैं |</h2>
+                <h2>Extract Your own Purchased batch Free by :-  @khansirextractorbot</h2>
+                <button class="control-button" onclick="toggleTheme()">Change Theme</button>
+            </div>
+            <div class="content">
+                <h2>Batch Videos:</h2>
+                
+        <div class="item" onclick="playVideo('video0')">
+            <h3>मानव स्वास्थ्य तथा रोग Part 1</h3>
+        </div>
+        <div id="video0" class="video-container">
+            <iframe src="https://www.youtube.com/embed/8VpqAPkI1X0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video1')">
+            <h3>मानव स्वास्थ्य तथा रोग Part 2</h3>
+        </div>
+        <div id="video1" class="video-container">
+            <iframe src="https://www.youtube.com/embed/nFoIX2L1T6Y" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video2')">
+            <h3>मानव स्वास्थ्य तथा रोग Part 3</h3>
+        </div>
+        <div id="video2" class="video-container">
+            <iframe src="https://www.youtube.com/embed/5-ii46KPANA" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video3')">
+            <h3>मानव स्वास्थ्य तथा रोग Part 4</h3>
+        </div>
+        <div id="video3" class="video-container">
+            <iframe src="https://www.youtube.com/embed/9fqG-9ZvXZ4" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video4')">
+            <h3>मानव स्वास्थ्य तथा रोग Part 5</h3>
+        </div>
+        <div id="video4" class="video-container">
+            <iframe src="https://www.youtube.com/embed/IRf2Hb8PJqs" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video5')">
+            <h3>संबंध एवं फलन Part 1</h3>
+        </div>
+        <div id="video5" class="video-container">
+            <iframe src="https://www.youtube.com/embed/3tRVlGdlKwY" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video6')">
+            <h3>संबंध एवं फलन Part 2</h3>
+        </div>
+        <div id="video6" class="video-container">
+            <iframe src="https://www.youtube.com/embed/kTGarssCP8g" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video7')">
+            <h3>संबंध एवं फलन Part 3</h3>
+        </div>
+        <div id="video7" class="video-container">
+            <iframe src="https://www.youtube.com/embed/582rrkyrnGA" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video8')">
+            <h3>संबंध एवं फलन Part 4</h3>
+        </div>
+        <div id="video8" class="video-container">
+            <iframe src="https://www.youtube.com/embed/cXDL32wCuOg" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video9')">
+            <h3>संबंध एवं फलन Part 5</h3>
+        </div>
+        <div id="video9" class="video-container">
+            <iframe src="https://www.youtube.com/embed/eTGO9kpDV8U" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video10')">
+            <h3>विलयन Part 1</h3>
+        </div>
+        <div id="video10" class="video-container">
+            <iframe src="https://www.youtube.com/embed/fOTv_IL0dLU" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video11')">
+            <h3>विलयन Part 2</h3>
+        </div>
+        <div id="video11" class="video-container">
+            <iframe src="https://www.youtube.com/embed/i5S8aSLz_Vo" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video12')">
+            <h3>विलयन Part 3</h3>
+        </div>
+        <div id="video12" class="video-container">
+            <iframe src="https://www.youtube.com/embed/RSLjnuft6Fc" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video13')">
+            <h3>विलयन Part 4</h3>
+        </div>
+        <div id="video13" class="video-container">
+            <iframe src="https://www.youtube.com/embed/eKpKNkG8dZs" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video14')">
+            <h3>विलयन Part 5</h3>
+        </div>
+        <div id="video14" class="video-container">
+            <iframe src="https://www.youtube.com/embed/rrR1uVV8zuI" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video15')">
+            <h3>विद्युत आवेश तथा क्षेत्र Part 1</h3>
+        </div>
+        <div id="video15" class="video-container">
+            <iframe src="https://www.youtube.com/embed/7qKO78t526w" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video16')">
+            <h3>विद्युत आवेश तथा क्षेत्र Part 2</h3>
+        </div>
+        <div id="video16" class="video-container">
+            <iframe src="https://www.youtube.com/embed/eZM-tRkgzi8" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video17')">
+            <h3>विद्युत आवेश तथा क्षेत्र Part 3</h3>
+        </div>
+        <div id="video17" class="video-container">
+            <iframe src="https://www.youtube.com/embed/14tzb5RWsic" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video18')">
+            <h3>विद्युत आवेश तथा क्षेत्र Part 4</h3>
+        </div>
+        <div id="video18" class="video-container">
+            <iframe src="https://www.youtube.com/embed/enPmHEAAYMA" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video19')">
+            <h3>KGS Maths Teacher Reveal | Boards Hindi Medium | Introducing Khan Sir Ki Board Team mai kaun ?</h3>
+        </div>
+        <div id="video19" class="video-container">
+            <iframe src="https://www.youtube.com/embed/B6MgEig-jUU" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video20')">
+            <h3>KGS Board Division Faculty Reveal Soon!</h3>
+        </div>
+        <div id="video20" class="video-container">
+            <iframe src="https://www.youtube.com/embed/5aHF7NmYkmM" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video21')">
+            <h3>KGS Chemistry Teacher Reveal | KGS Boards Hindi Medium | Introducing Khan Sir Ki Board Team Megastar</h3>
+        </div>
+        <div id="video21" class="video-container">
+            <iframe src="https://www.youtube.com/embed/Q2JYFUHpCAY" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video22')">
+            <h3>KGS Biology Teacher Reveal | Boards Hindi Medium | Introducing Khan Sir Ki Board Team Mai Kaun?</h3>
+        </div>
+        <div id="video22" class="video-container">
+            <iframe src="https://www.youtube.com/embed/TcDnexPsbXo" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video23')">
+            <h3>KGS Physics Teacher Reveal | Boards Hindi Medium | Introducing Khan Sir Ki Board Team Mai Kaun?</h3>
+        </div>
+        <div id="video23" class="video-container">
+            <iframe src="https://www.youtube.com/embed/yucXgemMLNk" allowfullscreen></iframe>
+        </div>
+        
+        <div class="item" onclick="playVideo('video24')">
+            <h3>KGS Biology Teacher Reveal | Boards Hindi Medium | Introducing Khan Sir Ki Board Team Mai Kaun?</h3>
+        </div>
+        <div id="video24" class="video-container">
+            <iframe src="https://www.youtube.com/embed/M0wViYrzPSo" allowfullscreen></iframe>
+        </div>
+        
+
+                <h2>Batch PDFs:</h2>
+                
+                <div class="item" onclick="showContent('pdf0')">
+                    <h3>मानव स्वास्थ्य तथा रोग - DPP(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf0" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/98c17cf0-34dd-4f15-ab09-7c64362d88a8.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf0')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf1')">
+                    <h3>मानव स्वास्थ्य तथा रोग Part 2(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf1" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/524f718e-fd21-4b31-9119-6d2526530126.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf1')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf2')">
+                    <h3>मानव स्वास्थ्य तथा रोग Part 3(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf2" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/ec158c7e-c9aa-41e5-bf2b-093d5a8c24e7.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf2')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf3')">
+                    <h3>मानव स्वास्थ्य तथा रोग Part 4(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf3" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3edec694-67be-46f0-ab9f-62acdf3a75a5.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf3')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf4')">
+                    <h3>संबंध एवं फलन Part 1(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf4" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/bb0dbbef-731e-4995-bc7c-48832f2045d8.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf4')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf5')">
+                    <h3>संबंध एवं फलन - DPP(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf5" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/86565abd-fb79-48b4-b880-fe9b1aa46e9a.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf5')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf6')">
+                    <h3>संबंध एवं फलन Part 2(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf6" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/a182ae8a-7f8c-4cfe-8bc8-4205f0435c6e.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf6')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf7')">
+                    <h3>संबंध एवं फलन Part 3(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf7" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/bbd533ee-cd78-4c5d-b8e9-d32e992d08a2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf7')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf8')">
+                    <h3>संबंध एवं फलन Part 4(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf8" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/8776849d-1031-4875-9f0b-adb34a859c7e.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf8')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf9')">
+                    <h3>संबंध एवं फलन Part 5(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf9" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4d825e01-0fa5-4de8-90a4-cc3064e33170.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf9')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf10')">
+                    <h3>विलयन Part 1(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf10" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/1b127f56-201a-402c-a306-e75dce01d5dc.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf10')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf11')">
+                    <h3>विलयन  - DPP(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf11" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3cb658f9-3320-417c-9ae6-4b74724a9596.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf11')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf12')">
+                    <h3>विलयन Part 2(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf12" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/129cf8c4-5b53-4f4d-b97c-74440de1b096.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf12')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf13')">
+                    <h3>विलयन Part 3(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf13" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/526dfa18-31da-4055-9a47-1308872daf02.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf13')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf14')">
+                    <h3>विद्युत आवेश तथा क्षेत्र Part 1(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf14" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/fdd346b3-b969-4e82-8402-f385e4917943.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf14')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf15')">
+                    <h3>विद्युत आवेश तथा क्षेत्र Part 2(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf15" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/98a36ab3-af30-44c1-b0f8-5b03e2211ac9.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf15')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf16')">
+                    <h3>विद्युत आवेश तथा क्षेत्र Part 3(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf16" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/dc257995-2d6b-43d4-9ac0-80f28e4627a5.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf16')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf17')">
+                    <h3>विद्युत आवेश तथा क्षेत्र Part 4(@Chat_tsrbot)</h3>
+                </div>
+                <div id="pdf17" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/0d3d14e3-cc13-4969-a4bd-75db185d8a76.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf17')">Fullscreen</button>
+                </div>
+                
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <script>
+            function showContent(id) {
+                var content = document.getElementById(id);
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            }
+
+            function playVideo(id) {
+                var allVideos = document.querySelectorAll('.video-container');
+                allVideos.forEach(video => {
+                    video.style.display = 'none';
+                    var videoElement = video.querySelector('video');
+                    if (videoElement) {
+                        videoElement.pause();
+                    }
+                });
+                
+                var selectedVideo = document.getElementById(id);
+                if (selectedVideo) {
+                    selectedVideo.style.display = 'block';
+                    var videoElement = selectedVideo.querySelector('video');
+                    if (videoElement) {
+                        videoElement.play();
+                    }
+                }
+            }
+
+            function changePlaybackSpeed(videoId, speed) {
+                var video = document.getElementById(videoId);
+                if (video) {
+                    video.playbackRate = speed;
+                }
+            }
+
+            function toggleFullscreen(id) {
+                var pdfViewer = document.getElementById(id);
+                pdfViewer.classList.toggle('fullscreen');
+            }
+
+            function toggleTheme() {
+                var body = document.body;
+                if (body.classList.contains('dark')) {
+                    body.classList.remove('dark');
+                    body.classList.add('skyblue');
+                } else if (body.classList.contains('skyblue')) {
+                    body.classList.remove('skyblue');
+                } else {
+                    body.classList.add('dark');
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                var videoElements = document.querySelectorAll('.video-container video');
+                videoElements.forEach(video => {
+                    video.addEventListener('error', (event) => {
+                        console.error('Error loading video:', event);
+                    });
+                });
+            });
+
+            function setupHLS() {
+                var hlsElements = document.querySelectorAll('video[data-hls]');
+                hlsElements.forEach(el => {
+                    var hls = new Hls();
+                    hls.loadSource(el.getAttribute('data-hls'));
+                    hls.attachMedia(el);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                        el.play();
+                    });
+                });
+            }
+
+            setupHLS();
+        </script>
+    </body>
+    </html>
+    
