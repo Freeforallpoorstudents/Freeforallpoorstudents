@@ -1,0 +1,1152 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Created By Robin Hood</title>
+        <style>
+            body {
+                font-family: Cambria, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            body.dark {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+            body.skyblue {
+                background-color: #e0f7fa;
+                color: #00796b;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .header {
+                text-align: center;
+                padding: 20px 0;
+            }
+            .content {
+                margin-top: 20px;
+            }
+            .item {
+                margin-bottom: 10px;
+                cursor: pointer;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #fff;
+                transition: background-color 0.3s;
+            }
+            .item:hover {
+                background-color: #f0f0f0;
+            }
+            .video-container {
+                display: none;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .video-container video {
+                width: 100%;
+                max-width: 800px;
+                height: auto;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                background: #000;
+            }
+            .video-container iframe {
+                width: 100%;
+                max-width: 800px;
+                height: 450px;
+                border: none;
+                border-radius: 10px;
+            }
+            .pdf-viewer {
+                display: none;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pdf-viewer embed {
+                width: 80%;
+                height: 800px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .pdf-viewer.fullscreen embed {
+                width: 100%;
+                height: 100vh;
+            }
+            .controls {
+                margin-top: 10px;
+                text-align: center;
+            }
+            .control-button {
+                padding: 5px 10px;
+                margin: 0 5px;
+                cursor: pointer;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                transition: transform 0.2s;
+            }
+            .control-button:hover {
+                transform: translateY(-2px);
+                background-color: #ddd;
+            }
+            .watermark {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                color: white;
+                font-size: 20px;
+                font-family: Cambria, sans-serif;
+                opacity: 0.7;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>This Batch Downloaded By  »  ┈━═.•°℞𝑜多їη 𝙷𝑜๏𝒹°•.═━┈ </h1>
+                <h2>अब ज्यादा Search मत करो चुपचाप से पढाई करो | और हा पहले videos होंगी उसके बाद PDFs हैं |</h2>
+                <h2>Extract Your own Purchased batch Free by :-  @khansirextractorbot</h2>
+                <button class="control-button" onclick="toggleTheme()">Change Theme</button>
+            </div>
+            <div class="content">
+                <h2>Batch Videos:</h2>
+                
+
+                <h2>Batch PDFs:</h2>
+                
+                <div class="item" onclick="showContent('pdf0')">
+                    <h3>Human Reproduction Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf0" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/debefe76-f7a9-4d4c-bba0-a1655d4924ff.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf0')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf1')">
+                    <h3>Human Reproduction - DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf1" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/85f898c6-e981-4cb2-ab57-43ef0fe45f9c.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf1')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf2')">
+                    <h3>Human Reproduction Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf2" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/c2c61403-4fa4-428d-a95b-2e075d4d9f88.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf2')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf3')">
+                    <h3>Human Reproduction Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf3" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/c95af7d2-2f42-48c8-8eef-045d01f353e9.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf3')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf4')">
+                    <h3>Human Reproduction Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf4" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/8b22b31f-6869-4f00-beab-ab5b4a5e8f08.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf4')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf5')">
+                    <h3>Human Reproduction Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf5" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4114b421-3419-4677-9a16-8d708cf49607.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf5')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf6')">
+                    <h3>Class Notes-Human Reproduction Part 6(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf6" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/beb2de1b-a576-4c8e-931b-e5a80685b25f.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf6')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf7')">
+                    <h3>Human Reproduction Part 7(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf7" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/54c89269-4a65-40e3-9d97-975dd2fc57a2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf7')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf8')">
+                    <h3>Class Notes- DPP Discussions(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf8" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/9834db1e-62c8-449b-a2e1-31b07005d6d1.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf8')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf9')">
+                    <h3>Class Notes-Reproductive Health Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf9" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/da684695-f941-419e-a3e0-4273d8e52915.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf9')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf10')">
+                    <h3>REPRODUCTIVE HEALTH DPP-01(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf10" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/405d0eba-f7f6-4992-83e2-9d8e00f6eb92.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf10')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf11')">
+                    <h3>Class Notes-Reproductive Health Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf11" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4669b7f7-3659-45f4-a3d9-c2d77af15270.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf11')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf12')">
+                    <h3>Class Notes-Reproductive Health Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf12" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/2bbdc364-31e9-4c8b-8552-f1ef987989e1.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf12')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf13')">
+                    <h3>Reproductive Health DPP - 02(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf13" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/01e0cfb0-779e-44ed-94ac-7e21272b0c71.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf13')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf14')">
+                    <h3>Class Notes-Reproductive Health DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf14" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4de9fbe1-0470-41a2-9014-b291a1275650.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf14')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf15')">
+                    <h3>Reproductive Health Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf15" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/7eb3fa3a-3050-4a8f-ad32-5f93ec1db996.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf15')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf16')">
+                    <h3>Class Notes-Evolution Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf16" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/a2706908-e8f8-4e7c-a09a-2c10598f457d.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf16')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf17')">
+                    <h3>Evolution DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf17" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/346ddacf-89a8-4e44-b185-06da95c42109.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf17')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf18')">
+                    <h3>Class Notes-Evolution Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf18" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/251ff3a5-394a-42e3-9bdc-17892efda1e0.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf18')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf19')">
+                    <h3>Class Notes-Evolution Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf19" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/72191fc6-ccd7-4914-8732-f4c5d046cb03.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf19')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf20')">
+                    <h3>Class Notes- Evolution Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf20" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/a726206c-c0a5-4ae6-b33c-4373b047035f.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf20')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf21')">
+                    <h3>Class Notes- Evolution Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf21" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/ba665f61-c8c2-4e71-bf8c-595367ce51c1.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf21')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf22')">
+                    <h3>Evolution Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf22" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/57bc1bd5-0bfc-4b97-8962-8ba48c61b9c7.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf22')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf23')">
+                    <h3>Sexual Reproduction in Flowering Plants Part 1 | Class 12th Board English Medium | KGS(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf23" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/340528d8-41c6-4945-87b1-668a2b4b538d.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf23')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf24')">
+                    <h3>Sexual Reproduction in Flowering Plants - DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf24" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/d33817e9-b304-4044-9c4b-542ba714e027.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf24')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf25')">
+                    <h3>Sexual Reproduction in Flowering Plants Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf25" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3fe2705a-929d-4b2b-8914-f9c817f5cc81.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf25')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf26')">
+                    <h3>Sexual Reproduction in Flowering Plants Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf26" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/bf905cc5-b634-41bb-b488-751d3ffd9b6d.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf26')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf27')">
+                    <h3>Sexual Reproduction in Flowering Plants Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf27" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/2e2efbf7-1a40-4722-90cf-ba6bf2a359bb.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf27')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf28')">
+                    <h3>Sexual Reproduction in Flowering Plants Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf28" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4d44c5cf-446f-43e7-9fb2-fcf6cb0b32aa.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf28')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf29')">
+                    <h3>Class Notes- Sexual Reproduction in Flowering Plants Part 6(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf29" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/26d792d2-f2c5-45f9-bd1d-f88a788ee958.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf29')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf30')">
+                    <h3>Sexual Reproduction in Flowering Plants Part 7(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf30" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/26729a8b-1812-4dc3-9785-cabcbbc4ddd9.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf30')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf31')">
+                    <h3>Class Notes-Sexual Reproduction in Flowering Plants Part 8(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf31" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/48f9ff75-b8f6-44ce-8f41-f5530e03ee07.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf31')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf32')">
+                    <h3>Class Notes-Sexual Reproduction in Flowering Plants DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf32" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/1b5146ce-c244-4496-9da8-20cb539c82f4.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf32')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf33')">
+                    <h3>Principle of inheritance and variation DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf33" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/ff36639f-d061-4723-aa78-5467a2e8b823.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf33')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf34')">
+                    <h3>Sexual Reproduction in Flowering Plants Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf34" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3d394f63-73ea-4853-85c5-12c9f13682da.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf34')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf35')">
+                    <h3>Principle of Inheritance and Variation DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf35" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/af6cc948-b6cc-4822-aba2-dc556fcf0ebc.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf35')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf36')">
+                    <h3>Class Notes-Principle of Inheritance and Variation Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf36" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3c74e5f0-a959-4d56-9415-6a20eb0b5a31.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf36')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf37')">
+                    <h3>Class Notes-Principle of Inheritance and Variation Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf37" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/270484f4-4254-426d-b58d-451ebea5688c.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf37')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf38')">
+                    <h3>Class Notes-Principle of Inheritance and Variation Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf38" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/cc85215f-abbd-4029-919b-b62245351dd9.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf38')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf39')">
+                    <h3>Class Notes-Principle of Inheritance and Variation Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf39" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/d7914520-569e-427b-85ce-2901c00094bb.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf39')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf40')">
+                    <h3>Class Notes-Principle of Inheritance and Variation Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf40" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/26ff55b5-8337-44ba-86c7-f756175ea1a4.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf40')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf41')">
+                    <h3>Class Notes-Principle of Inheritance and Variation Part  DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf41" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/122a4ad5-636c-46c5-ae74-724c01995788.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf41')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf42')">
+                    <h3>Principle of Inheritance and Variation Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf42" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/0250207d-83d1-4a86-a7ec-806f64adb194.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf42')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf43')">
+                    <h3>Relationship and Function(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf43" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/26a147d2-6b2f-4396-84d5-bf94549861fa.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf43')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf44')">
+                    <h3>Relationship and Function - DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf44" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/791c861e-3214-47c0-84e8-478c23a5bedc.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf44')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf45')">
+                    <h3>Relation and Function part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf45" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/2dc1a876-1216-446a-b848-22cb9af64480.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf45')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf46')">
+                    <h3>Relation and Function Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf46" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/c5bd00fd-3079-4104-aaab-16c199bcb0af.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf46')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf47')">
+                    <h3>Class Notes Relation and Function Part 7(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf47" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/0cbb66fd-d7d5-4e77-9ca6-f9318c03b6f3.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf47')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf48')">
+                    <h3>Class Notes Relation and Function Part 8(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf48" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/aff33409-5225-449d-9f17-3d95532b1afc.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf48')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf49')">
+                    <h3>Class Notes-Relation and Function Part 9(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf49" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/9262f86a-0e59-41d6-bc7d-9c1b015057eb.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf49')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf50')">
+                    <h3>Relation and Function Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf50" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3fbf11a4-d6fb-4d01-acda-ee1054c4d262.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf50')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf51')">
+                    <h3>Class Notes-Relation and Function DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf51" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/33a3a433-824b-4f92-9c4e-200c6e21af1d.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf51')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf52')">
+                    <h3>Class Notes-Inverse Trigonometric Functions Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf52" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/8c7bb7b2-3734-4ff3-bc94-c4bd05deff14.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf52')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf53')">
+                    <h3>Inverse Trigonometric Function DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf53" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/bd5ff07c-9ed1-422f-8572-4dfd486d21a4.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf53')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf54')">
+                    <h3>Class Notes-Inverse Trigonometric Functions Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf54" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/b691858f-45b9-4189-8472-c4fa1d152199.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf54')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf55')">
+                    <h3>Class Notes-Inverse Trigonometric Functions Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf55" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/7b417248-cead-4b6d-a2dc-39323326bc6a.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf55')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf56')">
+                    <h3>Class Notes-Inverse Trigonometric Functions Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf56" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/b97b988d-ee94-4cba-85aa-67e3107356fb.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf56')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf57')">
+                    <h3>Class Notes-Inverse Trigonometric Functions Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf57" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/d2721094-4a18-473d-b4e9-595543c817a7.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf57')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf58')">
+                    <h3>Class Notes-Inverse Trigonometric Functions DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf58" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/872d3b4f-a527-4e17-a72e-413f9248b41c.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf58')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf59')">
+                    <h3>Inverse Trigonometric Functions Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf59" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/797e929b-e26b-4da6-962f-d899e5ef6641.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf59')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf60')">
+                    <h3>Matrix DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf60" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4b72f5e0-d9f5-4d07-8fe8-115b821bcca2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf60')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf61')">
+                    <h3>Class Notes-Matrix Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf61" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/9b423d0c-f727-4c71-9ae7-75b6337247d5.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf61')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf62')">
+                    <h3>Class Notes-Matrix Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf62" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/c9ea6e0a-fbb4-4cc1-93cf-67c4b4f8a85f.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf62')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf63')">
+                    <h3>Class Notes-Matrix Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf63" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/cd45cfba-36be-49b0-8462-c10844466a32.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf63')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf64')">
+                    <h3>Class Notes-Matrix Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf64" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/017a0b01-31f9-4638-9a99-296bfe033d7f.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf64')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf65')">
+                    <h3>Class Notes-Matrix DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf65" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/b3e02444-d6df-4fa8-a8b4-4d40a5cc02d5.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf65')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf66')">
+                    <h3>Matrix Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf66" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/628ec222-0359-4cb2-887e-7e22728aff65.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf66')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf67')">
+                    <h3>Class Notes-Determinants Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf67" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/ba062ada-e98b-4c97-bbc5-dc292245ba2d.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf67')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf68')">
+                    <h3>Solution Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf68" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/c07a124b-5efd-40ac-9dee-50e28c78fa3c.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf68')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf69')">
+                    <h3>Solution - DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf69" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/1c13b60c-0fde-4a7f-b4a5-96e8378ae561.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf69')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf70')">
+                    <h3>Solution Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf70" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/859d7068-7a0e-4b69-b60f-d9000657286f.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf70')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf71')">
+                    <h3>Solution Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf71" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4e9fc27c-159f-46be-8baa-d92ad34e06e2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf71')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf72')">
+                    <h3>Solution Part  4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf72" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/a3661dff-4319-47c4-a90d-c2a0ff3ae5cd.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf72')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf73')">
+                    <h3>Solution Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf73" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/2bccee95-5e35-4b6d-a83c-4bcba37592f4.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf73')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf74')">
+                    <h3>Solution DPP Discussion(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf74" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/dd456f0d-e64d-41e9-9d92-08d23971355c.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf74')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf75')">
+                    <h3>Solution Test Paper Discussions(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf75" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/9ff84df4-c1e7-47bf-bd2e-6050b5a3c8f6.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf75')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf76')">
+                    <h3>Class Notes Electrochemistry Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf76" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/4b1eacdf-1bf3-4d06-bf9d-f0c53e5cb4d5.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf76')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf77')">
+                    <h3>Solutions(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf77" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/657d6be8-a85f-461d-9a47-dd0fb0b0cd56.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf77')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf78')">
+                    <h3>Class Notes-Electrochemistry Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf78" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/50bb0ab5-969a-4d5d-89cc-d908c036351e.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf78')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf79')">
+                    <h3>Class Notes-Electrochemistry Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf79" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/52fac436-c972-46a7-9431-f6cbe2942f6e.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf79')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf80')">
+                    <h3>Class Notes-Electrochemistry Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf80" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/616bc649-5734-494a-a3ae-08f470efaa82.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf80')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf81')">
+                    <h3>Electrochemistry DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf81" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/f2f8bad1-4ae3-477a-a9d7-8c101321c5a0.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf81')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf82')">
+                    <h3>Class Notes-Electrochemistry Part 6(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf82" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/f7e2878d-b9f4-44fd-bfed-d41a10b6dba1.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf82')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf83')">
+                    <h3>Class Notes-Electrochemistry Part 7(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf83" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/e3cdb619-ee5c-4661-8a3a-9352bcf9e1a4.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf83')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf84')">
+                    <h3>Class Notes- Electrochemistry DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf84" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/9d3e253f-feb1-4d8d-bbe5-79de39ce3ec8.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf84')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf85')">
+                    <h3>Electrochemistry Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf85" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/d0a1d199-d11f-419b-b732-f494e501c6a5.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf85')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf86')">
+                    <h3>Class Notes-Chemical Kinetics Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf86" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/812bfbfa-5c1c-4f3d-a764-f1fb876cf456.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf86')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf87')">
+                    <h3>Class Notes-Chemical Kinetics Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf87" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/c91f659e-71ba-4570-8113-cac81092e7b9.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf87')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf88')">
+                    <h3>Class Notes-Chemical Kinetics Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf88" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/6aa7603d-e3fa-488d-a8da-0e1c10709531.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf88')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf89')">
+                    <h3>Chemical Kinetics DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf89" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/fac0e0df-fe96-42ba-bbc5-9e0546a03aa0.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf89')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf90')">
+                    <h3>Class Notes-Chemical Kinetics Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf90" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/10c04e16-11e9-45ac-8418-272a3ed377d2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf90')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf91')">
+                    <h3>Class Notes-Chemical Kinetics DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf91" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/805104ef-5af7-445b-9f35-812889c2369a.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf91')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf92')">
+                    <h3>Chemical Kinetics Test Paper(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf92" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/907a1f3a-af75-4a54-af9b-63b9ee9cde9a.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf92')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf93')">
+                    <h3>Electric Charge and Fields Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf93" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/9dd983c9-cda8-4e70-b7a2-e2ef6c7b02cd.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf93')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf94')">
+                    <h3>Electric Charge and Fields Part - DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf94" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/51aecf11-5e39-4743-8767-afc02204daac.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf94')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf95')">
+                    <h3>Electric Charge and Fields Part2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf95" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/cebf53a1-8636-4f34-bcb0-ff5833ae2650.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf95')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf96')">
+                    <h3>Electric Charge and Fields Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf96" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/5618f154-9828-4092-8af9-0076515c78a2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf96')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf97')">
+                    <h3>Electric Charge and Fields Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf97" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/e9740e0d-26b3-4327-8e08-5f6ba43ed3e0.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf97')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf98')">
+                    <h3>Electric Charge and Fields Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf98" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/ff48acaf-82c7-4cdf-9356-2921dc17b061.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf98')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf99')">
+                    <h3>Electric Charge and Fields Part 7(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf99" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/370c246b-28e0-4507-b838-c734504346b4.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf99')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf100')">
+                    <h3>Electric Charge and Field DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf100" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/5ffc7809-fcab-49ad-84dd-1b51cb319ebf.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf100')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf101')">
+                    <h3>Class Notes-Electric Charge and Fields Part 8(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf101" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/a1b7cf04-e98f-471a-a010-ef7810c5c3ef.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf101')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf102')">
+                    <h3>Class Notes-Electric Charge & Fields DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf102" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/aface241-616d-4603-a6a2-e59450fad986.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf102')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf103')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf103" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/16f6a370-bc39-4b2e-9457-b59db89ecebc.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf103')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf104')">
+                    <h3>Electrostatic Potential and Capacitance  DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf104" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/329d30cb-88df-4fbc-83c2-8a83220830ab.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf104')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf105')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf105" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/599992c9-7c94-4ff4-9692-d2cc9218175a.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf105')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf106')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf106" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/087be79f-7590-4ce1-8c31-4ae4c1fc9085.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf106')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf107')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf107" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/0bf1ee41-9db7-4bae-bb64-b58ee99d03ef.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf107')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf108')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 5(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf108" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/1b5c897f-650f-46bf-9fad-1fa34d7480ae.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf108')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf109')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 6(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf109" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/3c2a20f0-7d9c-432f-9ec0-43c640a7dcef.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf109')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf110')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 7(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf110" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/41ddcf7a-988a-43c7-9f5c-0898372c2dd8.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf110')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf111')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 8(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf111" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/eafe07aa-a7e3-4b56-8125-adc85d7943d2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf111')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf112')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance Part 9(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf112" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/d7b534ee-b8b2-4fe6-821e-787c79b72dde.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf112')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf113')">
+                    <h3>Class Notes-Electrostatic Potential and Capacitance DPP(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf113" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/b75d19af-9bec-4f26-8356-420a54528435.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf113')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf114')">
+                    <h3>Class Notes-Current Electricity Part 1(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf114" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/69293e4d-f596-4442-8bc1-43d71bc40d55.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf114')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf115')">
+                    <h3>Class Notes- Current Electricity Part 2(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf115" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/1b8f6ed7-0608-4a12-b20b-6fc3294a14cc.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf115')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf116')">
+                    <h3>Class Notes- Current Electricity Part 3(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf116" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/44a3a5cd-8617-42c5-9a01-2c9376612ffe.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf116')">Fullscreen</button>
+                </div>
+                
+                <div class="item" onclick="showContent('pdf117')">
+                    <h3>Class Notes- Current Electricity Part 4(@hmaapke_pitaGh_bot)</h3>
+                </div>
+                <div id="pdf117" class="pdf-viewer">
+                    <embed src="https://kgs.nyc3.digitaloceanspaces.com/pdfs/10bbb675-84bf-46e7-8001-a97daca92fc2.pdf" type="application/pdf" />
+                    <button class="control-button" onclick="toggleFullscreen('pdf117')">Fullscreen</button>
+                </div>
+                
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <script>
+            function showContent(id) {
+                var content = document.getElementById(id);
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            }
+
+            function playVideo(id) {
+                var allVideos = document.querySelectorAll('.video-container');
+                allVideos.forEach(video => {
+                    video.style.display = 'none';
+                    var videoElement = video.querySelector('video');
+                    if (videoElement) {
+                        videoElement.pause();
+                    }
+                });
+                
+                var selectedVideo = document.getElementById(id);
+                if (selectedVideo) {
+                    selectedVideo.style.display = 'block';
+                    var videoElement = selectedVideo.querySelector('video');
+                    if (videoElement) {
+                        videoElement.play();
+                    }
+                }
+            }
+
+            function changePlaybackSpeed(videoId, speed) {
+                var video = document.getElementById(videoId);
+                if (video) {
+                    video.playbackRate = speed;
+                }
+            }
+
+            function toggleFullscreen(id) {
+                var pdfViewer = document.getElementById(id);
+                pdfViewer.classList.toggle('fullscreen');
+            }
+
+            function toggleTheme() {
+                var body = document.body;
+                if (body.classList.contains('dark')) {
+                    body.classList.remove('dark');
+                    body.classList.add('skyblue');
+                } else if (body.classList.contains('skyblue')) {
+                    body.classList.remove('skyblue');
+                } else {
+                    body.classList.add('dark');
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                var videoElements = document.querySelectorAll('.video-container video');
+                videoElements.forEach(video => {
+                    video.addEventListener('error', (event) => {
+                        console.error('Error loading video:', event);
+                    });
+                });
+            });
+
+            function setupHLS() {
+                var hlsElements = document.querySelectorAll('video[data-hls]');
+                hlsElements.forEach(el => {
+                    var hls = new Hls();
+                    hls.loadSource(el.getAttribute('data-hls'));
+                    hls.attachMedia(el);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                        el.play();
+                    });
+                });
+            }
+
+            setupHLS();
+        </script>
+    </body>
+    </html>
+    
